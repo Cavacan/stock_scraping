@@ -7,4 +7,8 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+<<<<<<< HEAD
   channel_prefix: stock_scraping_production
+=======
+  channel_prefix: scraping_test_production
+>>>>>>> 16c7819 (start app)
