@@ -1,0 +1,25 @@
+<h1>input URL</h1>
+
+<%= form_with url: scrape_path, method: :post, local:true do |f| %>
+  <div>
+    <%= f.label :info, "Stock :" %>
+    <%= f.text_field :info, placeholder: "1234" %>
+    <%= f.submit "取得開始" %>
+  </div>
+<% end %>
+
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>">
+    <%= content_tag(:p, message, class: message_type) %>
+  </div>
+<% end %>
+
+<div class="stock_info">
+  <% if @info.present? %>
+    <h3>infomation</h3>
+    <%= @info %>
+  <% else %>
+    <h3>No Data.</h3>
+  <% end %>
+</div>
+

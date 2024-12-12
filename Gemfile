@@ -70,3 +70,11 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'jquery-rails'
+
+gem 'bootstrap', '~> 5.3.0'
+
+gem 'nokogiri'
+
+gem 'http'
