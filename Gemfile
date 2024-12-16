@@ -73,6 +73,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'sassc-rails'
+
 gem 'bootstrap', '~> 5.3.0'
 
 gem 'nokogiri'
